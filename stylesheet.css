@@ -1,0 +1,62 @@
+.container{
+    display:grid;
+    grid-template-columns: 25% 75%;
+    
+}
+.links-display{
+    display:grid;
+    grid-template-rows: 50% 50%;
+    grid-row-gap:80px;
+
+}
+#links{
+    background-image: linear-gradient(blue,red);
+    height:800px;
+    font-family: 'Roboto', sans-serif;
+    
+  }
+#portfolio {
+     
+    height: 200px;
+  }
+.profile-photo{
+    max-height:50%;
+    max-width:50%;
+    border-radius: 40%;
+    
+}
+#partone{
+    text-align: center;
+}
+#parttwo li:hover{
+    
+    font-style: italic;
+}
+.portfolio-display{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 50px;
+    margin-left: 5px;
+    font-family: 'Lato', sans-serif;
+}
+.nested{
+    margin-top: 10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+.inside-img{
+    max-height: 100%;
+    max-width:100%;
+}
+.about-desc{
+    font-family: 'Playfair Display', serif;
+}
+.about-desc p{
+    font-style: italic;
+    font-family: 'Abel', sans-serif;
+
+}
+.nested small{
+    font-style: italic;
+}

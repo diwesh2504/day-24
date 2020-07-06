@@ -1,0 +1,152 @@
+<html>
+    <title>Portfolio</title>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <link href="stylesheet.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+        var mainPage=(
+            <div className="container">
+                <div className="links-display" id="links">
+                    <div id="partone"></div>
+                    <div id="parttwo"></div>
+                </div>
+                <div className="portfolio-display" id="portfolio">
+                    <div id="about"></div>
+                    <div id="skills"></div>
+                    <div id="resume"></div>
+                    <div id="contact"></div>
+                </div>
+
+            </div>
+        );
+        ReactDOM.render(mainPage,document.getElementById("root"));
+        var profilePhoto=(
+            <div>
+                <img src="photo.jpg" className="profile-photo"></img>
+                <h3>Brian Dudey</h3>
+            </div>
+        )
+        ReactDOM.render(profilePhoto,document.getElementById("partone"));
+        var portfolio_link=(
+            <div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </div>    
+        );
+        ReactDOM.render(portfolio_link,document.getElementById("parttwo"));
+        //Details
+        var about=(
+            <div>
+                <h2>About</h2>
+                <p>I enjoy turning complex problems into simple, beautiful and intuitive designs. When I’m not working, I’m working out. I also enjoy photography, visiting new cities and hiking.</p>
+                <div className="nested">
+                    <div>
+                        <img src="image1.png" className="inside-img"></img>
+                    </div>
+                    <div className="about-desc">
+                        <h3>UI/UX Designer and Web Developer</h3>
+                        <p>I'm a Front-End Developer from INDIA, CHENNAI. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences. Let's make something special.
+                        </p>
+                        <p>Full Stack Developer with proficiency in the following programs: Javascript, SQL, and Python, expertise with HTML and CSS seeks to establish a career as the Full Stack Developer. I am very familiar and experienced with Web Application Architecture and have mentored with a good number of successful developers
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        );
+        ReactDOM.render(about,document.getElementById("about"));
+        var skills=(
+            <div>
+            <h2>Skills</h2>
+            <p>Have you ever looked at a website and wondered how it works? All the buttons that you could click and the motions in your favorite website are a part of the front end development. Basically, all the visible site features are built through front end development.</p>
+            <p>The backend is the part of a web application that is unrevealed to the user. Unlike front-end, back-end development operations are not very easy and usually turn out to be complicated and manifold; this part is in alignment with the server. Backend operations are a lot different that are controlled by different programming languages like NodeJS.</p>
+            <div className="nested">
+            <div>
+                <p>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>React</li>
+                    <li>JavaScript</li>                    
+                </p>
+            </div>
+            <div>
+                <p><li>NodeJS</li>
+                    <li>MongoDB</li>
+                    <li>Restful API</li>
+                    <li>Express JS</li>
+                </p>
+            </div>
+            </div>
+            </div>
+        );
+        ReactDOM.render(skills,document.getElementById("skills"));
+        var edu=(
+            <div><h2>Resume</h2>
+                <div className="nested">
+                    <div>
+                        <h3>Summary</h3>
+                        <h4>Brian Dudey</h4>
+                        <p>I have been working with web development since 2020, the period during which I have worked in different environments, from big consultancy companies to start-ups. I am a self-motivated and self-taught professional who likes to solve problems.</p>
+                    </div>
+                    <div>
+                        <h3>Professional Experience</h3>
+                        <h4>INTERN - GUVI GEEK NETWORK PRIVATE LIMITED.</h4>
+                        <small>IITM Research Park</small>
+                        <li>Used Programming capabilities in NodeJS, Express, MongoDB and Javascript and other libraries and needed.</li>
+                        <li>Designed and executed security measures such as Passport, OAuth and Encryptions.
+                        Developed landing pages, dashboards and online applications using NodeJS, Express, Heroku and mLabs scripting.</li>
+                        <li>Created content Management System to serve as interface for Client using Passport, NodeJs, ExpressJS.</li>
+                    </div>
+                    <div>
+                        <h3>Education</h3>
+                        <h4><li>Batchelor of Electronics and Communication</li></h4>
+                        <small>Engineering College,Chennai</small>
+                        <p>Electronics and communication engineering is a promising field of engineering. In the first half of the course, the students go through the fundamental engineering concept, physics, mathematics, and chemistry. In the second half of the course, the students go through the core learning of communication such as design, digital electronics, fundamental of Electronics engineering, signal & circuit, electronic circuits, VLSI, power electronics, computer architecture, and control systems.</p>
+                        <h4><li>High School Diploma</li></h4>
+                        <small>High School</small>
+                        <p>Hight School Graduates well-rounded with strong foundational skills, who connect subjects, ideas, people, problems and solutions; who create unique, significant work that contributes to the community and/or world; and who can change themselves, their peers and the world. Connect – Create – Change!
+                        </p>
+
+                    </div>
+                    <div>
+                        <h3>Support Engineer-Mindtree Consulting</h3>
+                        <small>Chennai,TN</small>
+                        <p><li>Applied deployment best practices and proper security protocols in network management.</li>
+                        <li>Collaborated on network development, implementation, and maintenance of firewalls.</li>
+                        <li>Managed application patched, data backup, Security changes and network configuration and replaced boards, changed servers and loaded and tested software applications.</li>
+                        <li>Provided firewall and VPN management and incident response.</li></p>
+                    </div>
+                </div>
+            </div>
+        )
+        ReactDOM.render(edu,document.getElementById("resume"));
+        var contact=(
+            <div>
+                <h2>Contact</h2>
+                <p>
+                    <li>Location:Chennai</li>
+                    <li>Email:abc@gmail.com</li>
+                    <li>Call:123445678</li>
+                </p>
+            </div>
+
+        )
+        ReactDOM.render(contact,document.getElementById("contact"));
+        </script>
+        
+    </body>
+</html>
